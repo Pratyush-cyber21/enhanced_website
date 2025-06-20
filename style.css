@@ -8,6 +8,10 @@
 body {
   background: #f4f6f8;
   color: #333;
+  background-image: url("assets/world-map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 nav {
@@ -46,6 +50,9 @@ nav {
   text-align: center;
   background: linear-gradient(to right, #00c6ff, #0072ff);
   color: white;
+  background-image: url("assets/sky.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero h1 {
@@ -71,14 +78,15 @@ nav {
 .button:hover {
   background: #e0e0e0;
 }
-body {
-  background-image: url("assets/world-map.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 30px auto;
+  gap: 10px;
 }
-.hero {
-  background-image: url("assets/sky.jpg");
-  background-size: cover;
-  background-position: center;
+
+input, textarea, button {
+  padding: 10px;
 }

@@ -30,7 +30,10 @@ function updateClocks() {
       minute: '2-digit',
       second: '2-digit',
     });
-    document.getElementById(clock.id).textContent = time;
+    const element = document.getElementById(clock.id);
+    if (element) {
+      element.textContent = time;
+    }
   });
 }
 
